@@ -11,35 +11,23 @@ mongoose.connect('mongodb://localhost:27017/shopping', {
 
 var products = [
     new Product({
-        imagePath: 'https://upload.wikimedia.org/wikipedia/en/5/5e/Gothiccover.png',
-        title: 'Gothic Video Game',
-        description: 'Awesome Game!!!!',
-        price: 10
+        imagePath: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5989/5989502_rd.jpg',
+        title: 'Oculus Rift with Touch Controllers',
+        description: 'A robust, great value HMD with built-in headphones, mic, and a pair of 6DoF controllers for complete immersion.',
+        price: 399
     }),
     new Product({
-        imagePath: 'http://eu.blizzard.com/static/_images/games/wow/wallpapers/wall2/wall2-1440x900.jpg',
-        title: 'World of Warcraft Video Game',
-        description: 'Also awesome? But of course it was better in vanilla ...',
-        price: 20
+        imagePath: 'https://media.wired.com/photos/5af4e6e53733a15a44c5d038/master/w_2400,c_limit/HEADER-HTC-Vive-Pro-Full-Kit-SOURCE-HTC_topart.jpg',
+        title: 'HTC VIVE Pro with Controllers',
+        description: 'Unparalleled room-scale tracking, visual quality, and sound. HTC’s Pro-grade headset is the most immersive VR system out there!',
+        price: 1399
     }),
-    new Product({
+    new Product({ //PSVR
         imagePath: 'https://support.activision.com/servlet/servlet.FileDownload?file=00PU000000Rq6tz',
         title: 'Call of Duty Video Game',
         description: 'Meh ... nah, it\'s okay I guess',
         price: 40
     }),
-    new Product({
-        imagePath: 'https://pmcdeadline2.files.wordpress.com/2014/02/minecraft__140227211000.jpg',
-        title: 'Minecraft Video Game',
-        description: 'Now that is super awesome!',
-        price: 15
-    }),
-    new Product({
-        imagePath: 'https://d1r7xvmnymv7kg.cloudfront.net/sites_products/darksouls3/assets/img/DARKSOUL_facebook_mini.jpg',
-        title: 'Dark Souls 3 Video Game',
-        description: 'I died!',
-        price: 50
-    })
 ];
 
 var done = 0;
