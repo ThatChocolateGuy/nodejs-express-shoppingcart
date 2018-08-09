@@ -75,7 +75,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
     var cart = new Cart(req.session.cart);
     
     var stripe = require("stripe")(
-        "sk_test_fwmVPdJfpkmwlQRedXec5IxR"
+        "sk_test_S5FH9BC2hSfPd5maJuXsK6t8"
     );
 
     stripe.charges.create({
@@ -96,7 +96,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
             paymentId: charge.id
         });
         order.save(function(err, result) {
-            req.flash('success', 'Successfully bought product!');
+            req.flash('success', 'Order Placed!');
             req.session.cart = null;
             res.redirect('/');
         });
